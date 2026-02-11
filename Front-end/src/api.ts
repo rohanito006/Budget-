@@ -1,0 +1,8 @@
+import axios from "axios";
+import process from "process";
+
+const api = axios.create({
+    baseURL: process.env.REACT_PUBLIC_API_URL + "api/",
+})
+
+export default api;
