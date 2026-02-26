@@ -1,33 +1,20 @@
-POST http://localhost:8000/api/transactions/
+###
+POST http://localhost:8000/api/users/
 Content-Type: application/json
 
 {   
-    "text": "achat terrain",
-    "amount": 101000.00
+    "username": "theo",
+    "email": "jea@example.com",
+    "password": "password"
 }
 
 
-###
-GET http://localhost:8000/api/transactions/
 
 ###
-DELETE http://localhost:8000/api/transactions/0f034b16-a1ba-4f44-b60f-ff2df7f9c099/
-
-
-###
-PUT http://localhost:8000/api/transactions/0f034b16-a1ba-4f44-b60f-ff2df7f9c099/
-Content-Type: application/json
-
-{   
-    "text": "villa delpiro",
-    "amount": 1010000.00
-}
+GET http://localhost:8000/api/users/
+Content-Type: application/json 
 
 ###
-PATCH http://localhost:8000/api/transactions/4a6d3393-8461-4ba2-b35f-1e29e74656c8/
-Content-Type: application/json
-
-{   
-    "text": "achat voiture"
-}
+DELETE http://localhost:8000/api/users/1/
+Content-Type: application/json 
 
